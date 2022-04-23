@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TV Show Feed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="tv-wrapper">
+        <div id="small-screen">
+            <p>Please rotate your device screen or view on a larger screen size!<span class="smile">&#128579;</span></p>
+        </div>
+        <div id="spinner" class="hidden">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="tv-remote">
+            <img id="remote-power" src="power_btn.png" alt="power button">
+            <div id="search-filters">
+                <select id="filter-genre">
+                    <option value="" disabled selected>Select Genre</option>
+                </select>
+                <button id="filter-btn">Search Shows</button>
+                <button id="info-btn" class="hidden">Info</button>
+                
+            </div>
+            <div id="controller" class="hidden">
+                <button id="left">&lt;</button>
+                <button id="right">&gt;</button>
+            </div>
+        </div>
+        <div id="screen-wrapper">
+            <div id="power">
+                <div>
+                    <h2>Press the power button to start</h2>
+                    <img src="power_btn.png" alt="power button">
+                </div>
+            </div>
+            <div id="remote-screen" class="hidden">
+                <div>
+                    <h2></h2>
+                    <p>Flip through the channels<span class="next-line"> using the remote controller</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="show-container">
+            <div id="video" class="hidden">
+                <iframe class="hidden" width="560" height="315" src="" title="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <span class="close">X</span>
+            </div>
+            <img alt="" src="">
+        </div>
+        <div id="feed" class="hidden">
+            <p id="show-name"></p>
+            <p id="show-overview"></p>
+        </div>
+        <img id="tv" alt="" src="tv.png">
+    </div>
+    <div id="floor"></div>
+    <footer><img src="tmdb.svg" alt="TMDB"></footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
